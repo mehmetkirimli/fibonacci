@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class fiBo {
+    public static void main(String[] args) {
+        int sayi;
+        int fib = 0, n = 1, top = 1;
+        Scanner bjk = new Scanner(System.in);
+        System.out.print("bir sinir gir :");
+        sayi = bjk.nextInt();
+
+        System.out.print(fib);
+        for (int i = 1; i <= sayi; i++) {
+
+            top = fib;
+            fib = fib + n;
+
+            System.out.print(" , " + fib);
+
+            n = top;
+        }
+    }
+}
